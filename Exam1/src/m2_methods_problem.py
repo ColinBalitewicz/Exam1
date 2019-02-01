@@ -26,6 +26,7 @@ def main():
 
 
 def is_prime(n):
+
     """
     What comes in:  An integer n >= 1.
     What goes out:
@@ -72,12 +73,22 @@ def test_count_primes():
     #   TODO: 3. Add the additional test cases for this function below
     # After you have coded this, change its _TODO_ to DONE.
     ###############################################################################
-    print()
-    print('Your tests will go here!')
+    print('Test 2 expected',0)
+    print('Test 2 Actual',count_primes(20,22))
+    print('Test 3 expected',4)
+    print('Test 3 actual',count_primes(2,8))
+
     return
 
 
 def count_primes(m,n):
+    count=0
+    for k in range(n-m):
+        if is_prime(n)==True:
+            count=count+1
+        if is_prime(n)==True:
+            print(k+n-1)
+    return count
     """
     #    What comes in:
     #      -- A positive integer m.
@@ -148,6 +159,12 @@ def test_multiply_primes():
 
 
 def multiply_primes(m,n):
+    count=0
+    for k in range(n-m):
+        if is_prime(n)==True:
+            count=count+(n*k*2)
+    return count
+
     """
        #    What comes in:
        #      -- A positive integer m.
